@@ -1,0 +1,138 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!--------------- HEAD - TITLE, META TAGS & REL LINKS --------------->
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Development, HTML, CSS, JavaScript">
+    <meta name="description" content="UCM Professional Development Program Web Development Site">
+    <meta name="author" content="Vince Terrazas">
+
+    <!-- Mobile Meta-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>University of Central Missouri | Professional Development Program</title>
+
+    <!-- CSS Relationship Links-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700|Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="js/reportcard/css/badges.css"> <!-- for this page only -->
+
+    <!-- Script Area -->
+    <script src="js/reportcard/js/vendor/jquery-1.10.1.min.js"></script>
+    <script src="js/reportcard/js/reportcard.js"></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" >
+
+
+
+    </head>
+<!--------------- BODY > HEADER > NAVIGATION --------------->
+<body>
+<header>
+    <!-- Header h1 Title -->
+    <a href="index.html" id="logo">
+        <h1>UCM Professional Development Program</h1>
+        <h2>Test Website for the Front End Web Development Track - BASIC HTML, CSS & JavaScript</h2>
+    </a>
+
+    <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About the Student</a></li>
+                <li><a href="ucm.html" class="selected">Track Progress</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+<div id="wrapper">
+
+    <div id="reoort-card">
+
+        <div class="report-card treehouse"></div>
+        <div>
+            <script>
+                $('.report-card.treehouse').reportCard({
+                    userName: 'vinceterrazas',
+                    site: 'treehouse',
+                    badgesAmount: 7
+                });
+            </script>
+        </div>
+    </div>
+
+
+        <section>
+            <div id="tracks">
+
+                <ul id="intro" class="class-list">
+                    <h2>Intro to Modern Programing</h2>
+                    <li>Tips on Asking Questions <i> Completed</i></li>
+                    <li>Rapid Website Development<i> Completed</i></li>
+                    <li>Treehouse Club HTML<i> Completed</i></li>
+                    <li>Treehouse Club CSS<i> Completed</i></li>
+                    <li>Treehouse Club MASH<i> Completed</i></li>
+                    <li>Treehouse Club JavaScript<i> Completed</i></li>
+                    <li>Console Foundations<i> Completed</i></li>
+                    <li>Git Acquainted with Git<i> Completed</i></li>
+                    <li>Git Basics<i> Completed</i></li>
+                    <li>Using GitHub to Host Free Websites<i> Completed</i></li>
+                    <li>Copyright Basics<i> Completed</i></li>
+                    <li>Usability Testing<i> Completed</i></li>
+                    <li>Usability Foundations<i> Completed</i></li>
+                    <li>Accessibility<i> Completed</i></li>
+                    <li>Technology Foundations <i> Completed</i></li>
+                    <li>Website Basics <i> Completed</i></li>
+                    <li>Designing in the Browser vs. Illustrator<i> Completed</i></li>
+                    <li>One Page WordPress Site <i> Completed</i></li>
+                    <li>WordPress User Roles<i> Completed</i></li>
+                    <li>WordPress Codex<i> Completed</i></li>
+                    <li>Sketch Basics<i> Completed</i></li>
+                </ul>
+
+                <ul id="frontend" class="class-list">
+                    <h2>Front End Web Development</h2>
+                    <li>How to Make a Website<i> Completed</i></li>
+                    <li>CSS Basics</li>
+                    <li>JavaScript Basics</li>
+                    <li>HTML Forms</li>
+                    <li>JavaScript Loops, Arrays and Objects</li>
+                    <li>jQuery Basics</li>
+                    <li>HTML Tables</li>
+                    <li>Interactive Web Pages with JavaScript</li>
+                    <li>HTML Video and Audio</li>
+                    <li>Responsive Layouts</li>
+                    <li>AJAX Basics</li>
+                    <li>Accessibility</li>
+                    <li>Website Optimization</li>
+                    <li>Console Foundations</li>
+                    <li>Git Basics</li>
+                    <li>Front End Performance Optimization</li>
+                </ul>
+
+            </div>
+        </section>
+
+        <footer>
+            <a href="http://twitter.com/vinceterrazas"><img src="images/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
+            <a href="http://facebook.com/vincentterrazas"><img src="images/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
+
+            <p>&copy; 2015 Vince Terrazas.</p>
+        </footer>
+    </div>
+
+    </body>
+
+</html>
+
+
+
+
+
+
