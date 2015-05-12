@@ -1,11 +1,14 @@
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Report Card</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
 
-<!--------------- HEAD - TITLE, META TAGS & REL LINKS --------------->
-<head lang="en">
-    <meta charset="UTF-8">
-    <meta name="keywords" content="Development, HTML, CSS, JavaScript">
-    <meta name="description" content="UCM Professional Development Program Web Development Site">
-    <meta name="author" content="Vince Terrazas">
 
     <!-- Mobile Meta-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,14 +19,34 @@
     <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="js/badges.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="js/reportcard/css/badges.css">
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700|Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+     <style>
+            body {
+                padding-top: 60px;
+                padding-bottom: 40px;
+            }
+            .more-on-treehouse a {
+                opacity: .6;
+                position: relative;
+                display: inline-block;
+                top: 4px;
+                font-weight: 600;
+                font-family: helvetica neue;
+                -webkit-font-smoothing: antialiased;
+                z-index: 1 !important;
+                background-image: url('../img/gray-badge.png');
+                width: 100%;
+                background-position: 0px 0px;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
  <!-- for this page only -->
 
-    <!-- Script Area -->
-    <script src="js/vendor/jquery-1.10.1.min.js"></script>
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/reportcard.js"></script>
+
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/favicon.ico" >
@@ -53,24 +76,82 @@
     </header>
 
 
-<div id="wrapper">
-<div class="report-card treehouse">
-    
-    <script>
-$('.report-card.treehouse').reportCard({
-    userName: 'jillsheeks',
-    site: 'treehouse',
-    badgesAmount: 7
-});
-</script>
-</div>
-</div>
+  <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="#">Report Card</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li class="active"><a target="_blank" href="http://rileyh.com">Rileyh.com</a></li>
+                            <li class="dropdown pull-right">
+                                <a href="#" class="dropdown-toggle pull-right" data-toggle="dropdown">Get Social <b class="caret"></b></a>
+                                
+
+                                <ul class="dropdown-menu">
+                                   
+                                    <li><a href="http://www.linkedin.com/in/jillsheeks" target="_blank">Linked In</a></li>
+                                    <li><a href="https://github.com/jillsheeks" target="_blank">GitHub</a></li>
+                                    <li><a href="http://teamtreehouse.com/jillsheeks" target="_blank">Treehouse</a></li>
+                                    
+                                </ul>
+                            </li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+
+           
+            <!-- Example row of columns -->
+            <h1>Treehouse</h1>
+            <div class="row">
+                <div class="span12"> 
+                    <div class="well clearfix ">
+                        <div class="report-card treehouse"></div>
+                    </div>
+                </div>
+            </div>
+             <div class="row">
+                <div class="span4"> 
+                    <div class="well clearfix ">
+                        <div class="report-card treehouse"></div>
+                    </div>
+                </div>
+                <div class="span8"> 
+                    <div class="well clearfix ">
+                        <div class="report-card treehouse"></div>
+                    </div>
+                </div>
+            </div>
+
 
         <footer>
-            <a href="http://twitter.com/vinceterrazas"><img src="images/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
-            <a href="http://facebook.com/vincentterrazas"><img src="images/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
+           
 
             <p>&copy; 2015 Jill Sheeks.</p>
+            
+
+    <!-- Script Area -->
+             <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/reportcard/reportcard.js"></script>
+        <script>
+            $('.report-card.treehouse').reportCard({
+                userName: 'jillsheeks',
+                site: 'treehouse',
+                badgesAmount: 7
+            });
+            </script>
         </footer>
     </div>
 
